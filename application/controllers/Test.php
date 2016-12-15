@@ -35,6 +35,6 @@ class Test extends CI_Controller
             'expires_at' => strtotime('+1 hour'), // Cancel the message in 1 hour if the message is not yet sent
         ];
         //GOOD to GO!!! send sms to a number
-        $this->smsgateway->sendMessageToNumber($to, $message, $device, $options = []);
+        $this->smsgateway->sendMessageToNumber($number, $message, $deviceID, $options = []);
     }
 }
