@@ -1,6 +1,6 @@
 <?php
 
-class smsGateway
+class Smsgateway
 {
 
     static $baseUrl = "https://smsgateway.me";
@@ -83,7 +83,7 @@ class smsGateway
         $fields['email'] = $this->email;
         $fields['password'] = $this->password;
 
-        $url = smsGateway::$baseUrl . $url;
+        $url = Smsgateway::$baseUrl . $url;
 
         $fieldsString = http_build_query($fields);
 
